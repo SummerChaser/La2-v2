@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<constant name="struts.ui.theme" value="simple" />
+	<constant name="struts.ui.templateDir" value="template" />
+	<constant name="struts.ui.templateSuffix" value="ftl" />
+	
+	<package name="Lab2" extends="struts-default">
+		<action name="BookListAction" class="com.summer.action.BookListAction">
+			<result name="allList">/all.jsp</result>
+		</action>
+		<action name="AddAction" class="com.summer.action.AddAction">
+			<result name="index">/index.jsp</result>
+		</action>
+		<action name="DetailAction" class="com.summer.action.DetailAction">
+			<result name="detail">/detail.jsp</result>
+		</action>
+		<action name="SearchAuthorAction" class="com.summer.action.SearchAuthorAction">
+			<result name="showList">/showList.jsp</result>
+		</action> 
+		
+		<action name="DeleteAction" class="com.summer.action.DeleteAction">
+			<result name="index">/index.jsp</result>
+		</action> 
+		<action name="UpdateAction" class="com.summer.action.UpdateAction">
+			<result name="index">/index.jsp</result>
+		</action>
+	</package>
+
+</struts>
