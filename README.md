@@ -1,4 +1,4 @@
-# 软件工程 Lab2 - 星空图书馆
+# 软件工程 Lab2 - 星空图书馆 Struts2+mysql+tomcat
 
 &nbsp;
 
